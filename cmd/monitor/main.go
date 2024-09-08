@@ -1,7 +1,6 @@
 package main
 
 import (
-	"context"
 	"github.com/ethereum/go-ethereum/log"
 	"os"
 )
