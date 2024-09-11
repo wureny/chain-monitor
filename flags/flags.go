@@ -26,7 +26,7 @@ var (
 		Action:      nil,
 	}
 
-	MaxLenOfWatch = &cli.IntFlag{
+	MaxLenOfWatchFlag = &cli.Int64Flag{
 		Name:        "maxLenOfWatch",
 		Category:    "",
 		DefaultText: "",
@@ -43,7 +43,7 @@ var (
 		Action:      nil,
 	}
 
-	MaxLenOfOperation = &cli.IntFlag{
+	MaxLenOfOperationFlag = &cli.Int64Flag{
 		Name:        "maxLenOfOperation",
 		Category:    "",
 		DefaultText: "",
@@ -62,7 +62,7 @@ var (
 )
 
 func init() {
-
+	Flags = append([]cli.Flag{}, RpcUrlFlag, MaxLenOfOperationFlag, MaxLenOfWatchFlag)
 }
 
 var Flags []cli.Flag

@@ -13,6 +13,7 @@ import (
 	"strings"
 )
 
+// TODO config
 const (
 	RPC_URL                   = ""
 	MAX_LEN_OF_WATCH_LIST     = 100
@@ -277,4 +278,9 @@ func (m *Monitor) AddOperation(ctx context.Context, address string) error {
 	}
 	m.operationList = append(m.operationList, address)
 	return nil
+}
+
+// TODO rm function
+func (m *Monitor) RmWatch() {
+
 }
